@@ -20,7 +20,7 @@ Step 2: Then you need to press Enter so that the command line would open that pa
 
 Step 3: Type the following in your command line in the folder where your .java file is:
 
-javac --module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml YourFile.java
+javac --module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml RobotClass.java
 
 In the double quotes above, you need to write the path to the lib folder in your javafx-sdk folder which you installed from openjfx.io.
 
@@ -30,7 +30,7 @@ After this, you need java to interpret and run the .class file you just created 
 
 In order to do that, you just need to remove "c" from "javac" in the above code and also remove the .java extension. Other things remain the same.
 
-java --module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml YourFile
+java --module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml RobotClass.java
 
 This should work perfectly and help you run your javafx application from cmd.
 
