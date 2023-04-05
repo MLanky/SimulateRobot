@@ -34,35 +34,4 @@ java --module-path "Path to your javafx lib folder" --add-modules javafx.control
 
 This should work perfectly and help you run your javafx application from cmd.
 
-Now in case it feels a burden to you to write this code again and again. You could do the following.
-
-An environment variable could help you compile the above codes into a single word which you can type in your command line surrounded by %.
-
-In order to set your environment variable, go to the search bar in the bottom left corner of the screen. Then type environment variables in the search bar.
-
-You can click the open button in order to open it in the control panel. Then follow these steps:
-
-Go to tab: Advanced, which will probably be the default tab when you open it.
-Click "Environment Variables" in the bottom right.
-Click "New" in the 2nd bottom panel.
-set "Variable name" as "JAVA_FX"
-set "Variable value" as the following:
---module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml Please write the full correct path to your lib folder in your openjfx folder that you downloaded. And make sure it is inside double quotes.
-
-After doing that, click "OK" and then close the control panel. Now you need to restart the command line application. Without restarting, it will not show the environment variable that you just set. Just close it and open it again.
-
-Now type the following in your command line: echo %JAVA_FX%
-
-This should show you the variable value that you had just set. If it prints JAVA_FX, then please consider re-referring the above steps and checking for any path errors you made while typing the path to the lib folder in variable value in environment variables.
-
-If it shows the correct value, continue:
-
-Now you can type the following command in your command line. Make sure you are in the folder where your .java file is saved, if not please direct to the folder by using the "cd" command mentioned earlier:
-
-javac %JAVA_FX% YourFile.java Make sure to change the "YourFile" name to the name of your java file.
-
-Then it should compile the java file into a java class file. Then you type the following in your command line: java %JAVA_FX% YourFile
-
-This should work fine.
-
 If you have any questions, please mention them in the comments section.
