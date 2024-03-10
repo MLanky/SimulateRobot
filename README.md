@@ -33,5 +33,3 @@ In order to do that, you just need to remove "c" from "javac" in the above code 
 java --module-path "Path to your javafx lib folder" --add-modules javafx.controls,javafx.fxml RobotClass.java
 
 This should work perfectly and help you run your javafx application from cmd.
-
-If you have any questions, please mention them in the comments section.
